@@ -5,7 +5,7 @@
 
 <h2>Index</h2>
 
-@using (Html.BeginForm("Index","Test",FormMethod.Post))
+@using (Html.BeginForm("Index", "Test", FormMethod.Post))
 {
     <div>
         姓名:@Html.TextBox("name")<br />
@@ -18,3 +18,9 @@
         @Html.CheckBox("movie", "C")看電影
     </div>
 }
+
+@{
+    var message = "hi";
+}
+<p>@message</p>
+<p>@DateTime.Now</p>
