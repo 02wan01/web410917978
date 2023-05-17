@@ -7,9 +7,10 @@
 
 @using (Html.BeginForm("Signup", "User", FormMethod.Post))
 {
-    <p>姓名:@Html.TextBox("name")</p>
-    <p>帳號:@Html.TextBox("account")</p>
-    <p>密碼:@Html.TextBox("password")</p>
+    <p>姓名:@Html.TextBox("name") @ViewBag.nameMessage</p>
+    <p>帳號:@Html.TextBox("account") @ViewBag.AccountMessage</p>
+    <p>密碼:@Html.TextBox("password") @ViewBag.PasswordMessage</p>
+    <p>@ViewBag.Message</p>
     <input type="submit" value="註冊" />
 }
 
