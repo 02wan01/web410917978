@@ -19,19 +19,19 @@ namespace web410917978.Controllers
         {
             if (name.IsNullOrWhiteSpace())
             {
-                ViewBag.NameMessage = "請輸入姓名"
+                ViewBag.NameMessage = "請輸入姓名";
             }
             if (account.IsNullOrWhiteSpace())
             {
-                ViewBag.NameMessage = "請輸入帳號"
+                ViewBag.NameMessage = "請輸入帳號";
             }
             if (password.IsNullOrWhiteSpace())
             {
-                ViewBag.NameMessage = "請輸入密碼"
+                ViewBag.NameMessage = "請輸入密碼";
             }
             if (!name.IsNullOrWhiteSpace() && !account.IsNullOrWhiteSpace() && !password.IsNullOrWhiteSpace())
             {
-                ViewBag.Message = "註冊成功"
+                ViewBag.Message = "註冊成功";
             }
             return View();
         }
